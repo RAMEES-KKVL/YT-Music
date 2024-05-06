@@ -1,0 +1,15 @@
+<div class="flex w-[100%] h-[100%] gap-5 overflow-auto">
+    <div  class=" w-[14 rem] h-[100%] flex items-center flex-col" *ngFor="let song of songDetails">
+        <div class="w-[100%] h-[65%] rounded-[1rem]">
+            <img src="{{ song.artwork }}" alt="" class="w-[100%] h-[100%] rounded-[15px]">
+        </div>
+        <div class="w-[100%] h-[35%]">
+            <p class="mt-5 text-xl clamp-text">
+                {{ song.title }}
+            </p>
+            <p class="text-lg text-neutral-400 clamp-text">
+                {{ song.artist }}
+            </p>
+        </div>
+    </div>
+</div>

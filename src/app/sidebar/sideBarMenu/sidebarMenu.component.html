@@ -1,0 +1,16 @@
+<div class="flex w-[99%] h-[3rem] items-center justify-center mt-4 rounded-[7px] hover:bg-customGray" 
+    *ngFor="let button of buttonContent" >
+    <div class="w-[30%] pl-3 text-[1.7rem]">
+        <i class="{{button.icon}}"></i>
+    </div>
+    <div class="w-[70%] pl-1 text-[1.4rem]">
+        {{button.text}}
+    </div>
+</div>
+
+<hr class="mt-5 border border-gray-700">
+<div class="w-[100%] flex justify-center mt-9 flex-col p-2">
+    <app-sign-in-button buttonStyle='sidebar'></app-sign-in-button>
+
+    <p class="mt-5 text-zinc-500">Sign in to create & share playlists, get personalized recommendations, and more.</p>
+</div>

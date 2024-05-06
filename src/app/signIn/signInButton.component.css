@@ -1,0 +1,23 @@
+.sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    background-color: rgb(35, 35, 35);
+    height: 3rem;
+    color: aliceblue;
+    border-radius: 30px;
+}
+.sidebar:hover{
+    background-color: rgb(54, 54, 54);
+}
+.header-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    background-color: aliceblue;
+    height: 2.5rem;
+    color: black;
+    border-radius: 30px;
+}

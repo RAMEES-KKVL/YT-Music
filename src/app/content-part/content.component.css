@@ -1,0 +1,45 @@
+.content-container{
+    width: calc(100vw - 18rem);
+    height: calc(100vh - 5rem);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.content-div-slider{
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+    overflow-y: scroll;
+}
+.content-div-category{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+}
+.content-div-slider-inner{
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.subHeading{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+.heading{
+    width: 100%;
+    height: 4rem;
+    font-size: 2.5rem;
+}
+.details{
+    width: 100%;
+    overflow-x: auto;
+    height: calc(100% - 6rem);
+}
