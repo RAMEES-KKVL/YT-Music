@@ -17,6 +17,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CategoryComponent } from './content-part/category/category.component';
 import { SliderComponent } from './content-part/slider/slider.component';
 import { MiniSliderComponent } from './content-part/miniSlider/miniSlider.component';
+import { AdInnerComponent } from './content-part/ad-inner/adInner.component';
+import { VideoSliderComponent } from './content-part/videoSlider/videoSlider.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,15 +39,21 @@ import { MiniSliderComponent } from './content-part/miniSlider/miniSlider.compon
     ContentPart,
     CategoryComponent,
     SliderComponent,
-    MiniSliderComponent
+    MiniSliderComponent,
+    AdInnerComponent,
+    VideoSliderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule { }

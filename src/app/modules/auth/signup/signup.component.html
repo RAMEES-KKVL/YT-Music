@@ -1,0 +1,55 @@
+
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+<div class=" bg-black login_bg login-container-div">
+    <div class="flex drop-shadow-none w-[60%] h-[50%]  items-center justify-center rounded-[1rem]">
+        <div class="w-[50%] h-[70%]">
+            <img src="assets/images/2142904.webp" alt="" class="w-[100%]  h-[100%] rounded-[rem]">
+        </div>
+        <div class="flex flex-col w-[50%] h-[100%] justify-center m-5 gap-3 bg-">
+            <!-- SELECTOR -->
+                <label for="username">Username</label>
+                <input type="text" class="h-[2rem] text-black p-3 rounded-[10px] outline-none" required formControlName="fullName">
+                <small class="text-red-500" *ngIf="signupForm.get('fullName')?.touched && signupForm.get('fullName')?.errors">Full name is required</small>
+
+                <label for="email">Email</label>
+                <input type="email" class="h-[2rem] text-black p-3 rounded-[10px] outline-none" autofocus autocomplete required formControlName="email">
+                <small class="text-red-500" *ngIf="signupForm.get('email')?.touched && signupForm.get('email')?.errors">email is required</small>
+
+                <label for="password">Password</label>
+                <input type="password" class="h-[2rem] text-black p-3 rounded-[10px] outline-none" required formControlName="password">
+                <small class="text-red-500" *ngIf="signupForm.get('password')?.touched && signupForm.get('password')?.errors">password is required</small>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="h-[2rem] text-black p-3 rounded-[10px] outline-none" required formControlName="confirmPassword">
+                <small class="text-red-500" *ngIf="signupForm.get('confirmPassword')?.hasError('passwordMismatch')">password Mismatch</small>
+
+                <div class="flex justify-between items-center">
+                    <div>
+                        Already have an account? <b><a href=""> Login</a></b>
+                    </div>
+                    <auth-body [buttonText]="text" ></auth-body>
+                    <small class="text-red-500">{{errorMessage}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<!-- <auth-body></auth-body> -->
+
+
+    <!-- <button class="login" [disabled]="signupForm.invalid" >Register</button>
+</form>
+<small class="text-red-500">{{errMsg}}</small>
+<div class="text-sm flex justify-between items-center mt-3">
+  <p>If you already have an account...</p>
+  <app-sign-in buttonStyle="register" (click)="loginClick()">Login</app-sign-in>
+</div>
+</div>
+<div class="w-1/2 md:block hidden ">
+<img src="../../../assets/images/broken-heart-concept.jpg" class="h-full">
+</div>
+
+</div> -->

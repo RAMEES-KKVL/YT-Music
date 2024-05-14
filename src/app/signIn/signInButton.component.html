@@ -1,1 +1,6 @@
-<button [ngClass]="buttonStyle == 'sidebar' ? 'sidebar' : 'header-button'">Sign In</button>
+<button 
+    (click)="emitTheClickEvent()" 
+    [ngClass]="buttonStyle == 'sidebar' ? 'sidebar' : 'header-button'"
+>
+    Sign In
+</button>

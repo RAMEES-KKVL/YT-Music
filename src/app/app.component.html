@@ -1,7 +1,6 @@
 <div class="bg-slate-700 h-[100vh] w-[100vw]">
     <app-header class="flex items-center h-[5rem] bg-black text-white w-full border-b-[1px] border-gray-600"></app-header>
-  <div class="flex">
-    <app-side-bar></app-side-bar>
-    <app-content-area class="overflow-auto"></app-content-area>
-  </div>
+    <div class="flex">
+      <router-outlet></router-outlet>
+    </div>
 </div>

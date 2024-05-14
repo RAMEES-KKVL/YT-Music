@@ -1,0 +1,19 @@
+<div class="overflow-x-auto w-[100%] h-[100%] flex gap-5">
+    <!-- <div class=""> -->
+        <div class="min-w-[25rem] h-[100%]" *ngFor="let song of songDetails">
+            <div class="w-[97%] h-[80%] relative">
+                <img src="{{ song.artwork }}" alt="" class="w-[100%] h-[100%] rounded-[5px]">
+                <div class="absolute top-[8rem] left-[10rem] w-0 h-0 border-l-[3rem] border-l-white border-b-[2rem] border-b-transparent border-t-[2rem] border-t-transparent"></div>
+            </div>
+            <div class="h-[20%] w-[97%] flex flex-col justify-center items-center">
+                <div class="w-[100%] line-clamp-1 truncate">
+                    {{ song.title }}
+                </div>
+                <div class="w-[100%] text-neutral-400 line-clamp-1 truncate">
+                    {{ song.artist }}
+                </div>
+            </div>
+        </div>
+        
+    <!-- </div> -->
+</div>
